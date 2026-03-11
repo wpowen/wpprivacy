@@ -3,48 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WorkShield</title>
+    <title>裁神 WorkShield | 支持与隐私</title>
     <meta
       name="description"
-      content="WorkShield 官方支持与隐私信息页面。"
+      content="裁神 WorkShield 官方支持与隐私页面。"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
-    <main class="shell">
-      <section class="hero">
-        <p class="eyebrow">WorkShield</p>
-        <h1>用于 App Store 提审的公开信息页</h1>
-        <p class="lead">
-          这里提供应用支持方式、隐私政策与基础联系信息，可直接作为
-          GitHub Pages 公共页面使用。
-        </p>
-      </section>
+  <body class="landing-page">
+    <main class="site-shell">
+      <header class="hero-block">
+        <div class="hero-copy">
+          <p class="eyebrow">CaiShen WorkShield</p>
+          <h1>支持信息与隐私说明</h1>
+          <p class="hero-lead">
+            本站为裁神 WorkShield 当前 iOS 版本的官方公开页面，提供技术支持入口、
+            个人信息处理说明与后续版本维护所需的对外文档。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-link" href="./support.html">查看技术支持</a>
+            <a class="secondary-link" href="./privacy.html">查看隐私政策</a>
+          </div>
+        </div>
 
-      <section class="card-grid">
-        <a class="card" href="./support.html">
-          <span class="card-kicker">Support</span>
+        <div class="hero-note">
+          <p class="note-label">Official Notice</p>
+          <p class="note-text">
+            本站内容仅对应裁神 WorkShield 当前公开版本及配套服务。若应用功能、
+            数据处理方式或支持渠道发生实质变化，相关页面会同步更新。
+          </p>
+        </div>
+      </header>
+
+      <section class="intro-grid">
+        <article class="feature-panel">
+          <p class="feature-kicker">Support</p>
           <h2>技术支持</h2>
-          <p>查看问题反馈方式、常见响应范围与处理渠道。</p>
-        </a>
+          <p>
+            说明支持渠道、处理范围、反馈建议与响应节奏，可直接作为 App Store 的
+            技术支持链接使用。
+          </p>
+          <a class="inline-link" href="./support.html">打开支持页面</a>
+        </article>
 
-        <a class="card" href="./privacy.html">
-          <span class="card-kicker">Privacy</span>
+        <article class="feature-panel">
+          <p class="feature-kicker">Privacy</p>
           <h2>隐私政策</h2>
-          <p>查看账号、设备、使用过程与内容数据的处理说明。</p>
-        </a>
+          <p>
+            基于当前版本实际功能与数据处理路径撰写，重点说明账号认证、用户主动提交内容、
+            AI 分析处理、本地保存与用户权利。
+          </p>
+          <a class="inline-link" href="./privacy.html">打开隐私政策</a>
+        </article>
       </section>
 
-      <section class="panel">
-        <h2>发布后地址</h2>
-        <p>如果仓库保持为 <code>wpowen/wpprivacy</code>，公开地址会是：</p>
-        <ul class="link-list">
+      <section class="route-panel">
+        <h2>公开页面链接</h2>
+        <ul class="route-list">
           <li>
+            <span>Support URL</span>
             <a href="https://wpowen.github.io/wpprivacy/support.html">
               https://wpowen.github.io/wpprivacy/support.html
             </a>
           </li>
           <li>
+            <span>Privacy Policy URL</span>
             <a href="https://wpowen.github.io/wpprivacy/privacy.html">
               https://wpowen.github.io/wpprivacy/privacy.html
             </a>
