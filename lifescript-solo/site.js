@@ -126,7 +126,9 @@
       : renderSections(currentPage.sections, language);
 
     document.documentElement.lang = language;
-    document.title = `${currentPage.title} · ${translation.brandTitle}`;
+    document.title = currentPage.title === translation.brandTitle
+      ? currentPage.title
+      : `${currentPage.title} · ${translation.brandTitle}`;
 
     const descriptionTag = document.querySelector('meta[name="description"]');
     if (descriptionTag) descriptionTag.setAttribute("content", currentPage.description);
