@@ -2,13 +2,19 @@
 
 Static support and legal pages for `LifeScript-Solo`.
 
-Published subdirectory:
+Suggested publish targets:
 
-- `/lifescript-solo/index.html`
-- `/lifescript-solo/privacy.html`
-- `/lifescript-solo/support.html`
-- `/lifescript-solo/contact.html`
-- `/lifescript-solo/content-rating.html`
-- `/lifescript-solo/terms.html`
+- `privacy.html`
+- `support.html`
+- `contact.html`
+- `content-rating.html`
+- `terms.html`
 
-These pages were copied from the `LifeScript-Solo` app workspace and are intentionally isolated in this subdirectory so they do not interfere with other apps hosted in this repository.
+Language behavior:
+
+- Root pages support `zh-Hans`, `en`, `ja`, and `ko`
+- Language is resolved from `?lang=`, then local storage, then browser language
+- Internal links preserve the selected language
+- Older language-specific subdirectories should not be used
+
+These pages are intentionally isolated under `LifeScript-Solo/LegalPages` so they do not interfere with any other app's legal content in this repository.
