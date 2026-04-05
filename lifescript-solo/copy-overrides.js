@@ -28,18 +28,130 @@
       },
       pages: {
         home: {
-          title: "帮助与说明",
-          description: "查看天机录的隐私、支持、联系、内容提示与服务条款。",
-          heroKicker: "帮助与说明",
-          heroTitle: "天机录 帮助与说明",
-          heroSummary: "查看隐私说明、获取支持、联系开发者，并了解内容提示和服务条款。",
-          heroTags: ["隐私", "支持", "条款"],
+          title: "天机录",
+          description: "一部会回应选择的仙侠互动小说。查看功能亮点，并继续访问支持、隐私、联系、内容提示与服务条款。",
+          heroKicker: "互动仙侠",
+          heroTitle: "把修行、抉择与因果，做成一部会回应你的小说。",
+          heroSummary: "《天机录》不是一部静态阅读的仙侠小说。你的选择会改变章节走向、人物关系和后续代价；整体体验以离线阅读为主，但每一次落子都在推动局势继续变化。",
+          heroTags: ["剧情选择", "人物关系", "离线体验", "多语言支持"],
           heroActions: [
-            { href: "./support.html", label: "获取支持", variant: "primary" },
-            { href: "./privacy.html", label: "查看隐私", variant: "secondary" }
+            { scrollTarget: "showcase", label: "查看功能亮点", variant: "primary" },
+            { scrollTarget: "information", label: "查看说明入口", variant: "secondary" }
           ],
-          noteTitle: "从哪里开始",
-          noteBody: "使用中遇到问题，请先看“支持”。想了解应用会在本机保存什么，请看“隐私”。第一次接触这部作品，可先看“内容提示”。"
+          noteTitle: "为什么首页像一张产品海报",
+          noteBody: "这里先展示应用的气质和玩法，再把支持、隐私、联系、内容提示和条款留在后面，方便你继续深入。",
+          heroStats: [
+            { value: "1200", label: "章节规划" },
+            { value: "多线", label: "剧情分岔" },
+            { value: "离线", label: "主要体验" },
+            { value: "4", label: "支持语言" }
+          ],
+          showcase: {
+            eyebrow: "功能亮点",
+            title: "像读小说，也像在一张命盘上持续落子。",
+            summary: "点击下面的功能，看看《天机录》如何把章节、关系、选择和氛围连成一整套体验。",
+            previewKicker: "当前预览",
+            features: [
+              {
+                name: "命途图",
+                mini: "剧情路径可见",
+                title: "路线不是藏在后台，而是被玩家看见。",
+                body: "每一次关键选择都会留下轨迹。你不是在黑箱里盲选，而是在不断展开的命途图上，看着局势往哪里偏移。",
+                bullets: [
+                  "用可视化节点表现关键剧情分岔",
+                  "帮助你理解当前选择会通向哪类后果",
+                  "保留仙侠布局感，而不是做成冰冷的流程图"
+                ],
+                quote: "先看见局，再决定如何落子。",
+                previewBadge: "命途图",
+                previewTitle: "三条岔路，正在同时逼近你。",
+                previewSummary: "主线并不只有一条。不同选择会把你推向不同的人心、代价和结局方向。",
+                previewPills: ["卷一·启局", "第128章", "3 条分岔"],
+                previewRoute: ["入局", "试探", "反噬", "改命"]
+              },
+              {
+                name: "人心盘",
+                mini: "关系持续变化",
+                title: "人物关系会记住你做过的事。",
+                body: "《天机录》把人物关系当成长期变化，而不是一次性弹窗。你的判断、偏向和犹豫，都会在后面继续发酵。",
+                bullets: [
+                  "关键角色关系会随选择累积改变",
+                  "关系变化会影响后续对话、站位和风险",
+                  "让“人心”成为仙侠世界的一部分，不只是数值"
+                ],
+                quote: "局势之外，人心同样会反噬。",
+                previewBadge: "人心盘",
+                previewTitle: "一句话的偏袒，也可能改写后半卷。",
+                previewSummary: "不是只有战斗结果重要。你站在哪一边，迟早会被人记住。",
+                previewPills: ["苏九宁 +2", "沈孤舟 -1", "势力紧张"],
+                previewRoute: ["偏袒", "记账", "裂痕", "回响"]
+              },
+              {
+                name: "因果卷",
+                mini: "选择会有代价",
+                title: "选择不是立即开奖，而是慢慢显形。",
+                body: "很多后果不会在当章立刻爆开。它们会像因果一样压在后面，等到合适的时机回到你面前。",
+                bullets: [
+                  "让短期收益和长期代价同时存在",
+                  "保持互动小说的悬念，而不是即时算分",
+                  "让每一次选择更像仙侠叙事中的“种因”"
+                ],
+                quote: "你以为已经翻页，因果却还没翻完。",
+                previewBadge: "因果卷",
+                previewTitle: "眼前得利，未必不是后面的裂口。",
+                previewSummary: "应用会把关键选择保留下来，让“种下去的因”在更后面重新显现。",
+                previewPills: ["短期得利", "后续反噬", "隐藏回收"],
+                previewRoute: ["起念", "得利", "埋线", "清算"]
+              },
+              {
+                name: "静读模式",
+                mini: "氛围与节奏",
+                title: "把阅读做得像一场安静但压迫感十足的入局。",
+                body: "界面尽量克制，节奏留给文字与决定本身。你看到的是一页页故事，但背后一直有暗流在推着你往前。",
+                bullets: [
+                  "以阅读体验为主，减少噪声式干扰",
+                  "更适合长章节、沉浸式连续阅读",
+                  "让仙侠气质来自文字、留白和光感，而不是堆砌特效"
+                ],
+                quote: "不是热闹地闪烁，而是安静地逼近。",
+                previewBadge: "静读模式",
+                previewTitle: "界面退后一步，故事就能更往前一步。",
+                previewSummary: "更少干扰，更长呼吸，让你把注意力留给世界观、抉择和后果。",
+                previewPills: ["长章节", "沉浸阅读", "低干扰"],
+                previewRoute: ["入卷", "沉入", "抉择", "回响"]
+              }
+            ]
+          },
+          journey: {
+            eyebrow: "体验节奏",
+            title: "从入局到改命，层层推进。",
+            summary: "首页不剧透具体剧情，只把这款应用的交互节奏和情绪推进方式展示出来。",
+            steps: [
+              {
+                kicker: "第一步",
+                title: "先被世界观抓住",
+                body: "用卷名、章节和关键局势把你带进故事，不靠复杂说明强行解释设定。",
+                accent: "jade"
+              },
+              {
+                kicker: "第二步",
+                title: "再让选择留下痕迹",
+                body: "重要选择会影响剧情路径、角色关系和后续代价，让互动不是表面装饰。",
+                accent: "gold"
+              },
+              {
+                kicker: "第三步",
+                title: "最后让后果慢慢回来",
+                body: "不是每个结果都立刻揭晓。很多影响会在更后面的章节重新显形。",
+                accent: "sapphire"
+              }
+            ]
+          },
+          portal: {
+            eyebrow: "说明与帮助",
+            title: "需要更具体的信息时，从这里继续。",
+            summary: "支持、隐私、联系、内容提示和服务条款仍然保留在这里。首页负责介绍产品，内页负责把事情说明白。"
+          }
         },
         privacy: {
           title: "隐私说明",
@@ -398,18 +510,130 @@
       },
       pages: {
         home: {
-          title: "Help and Information",
-          description: "Find Tianjilu privacy details, support, contact, content notice, and terms.",
-          heroKicker: "Help and Information",
-          heroTitle: "Tianjilu Help and Information",
-          heroSummary: "Find privacy details, support, developer contact, content notice, and terms for the current version.",
-          heroTags: ["Privacy", "Support", "Terms"],
+          title: "Tianjilu",
+          description: "An interactive xianxia novel that responds to your choices. Explore the product first, then continue to privacy, support, contact, content notice, and terms.",
+          heroKicker: "Interactive Xianxia",
+          heroTitle: "Cultivation, choice, and consequence, shaped into a novel that answers back.",
+          heroSummary: "Tianjilu is not a static xianxia novel. Your choices shift routes, relationships, and later costs. The core experience stays focused on long-form reading, but the world keeps remembering what you did.",
+          heroTags: ["Branching story", "Relationship memory", "Offline-first", "Four languages"],
           heroActions: [
-            { href: "./support.html", label: "Get Support", variant: "primary" },
-            { href: "./privacy.html", label: "View Privacy", variant: "secondary" }
+            { scrollTarget: "showcase", label: "Explore Features", variant: "primary" },
+            { scrollTarget: "information", label: "Open Information Pages", variant: "secondary" }
           ],
-          noteTitle: "Where to start",
-          noteBody: "If something is wrong, start with Support. If you want to know what the app stores on your device, start with Privacy. If you want to check the tone of the work first, read Content."
+          noteTitle: "Why the homepage feels like a product page",
+          noteBody: "This first page sells the feel of the app. The detailed support, privacy, contact, content notice, and terms pages are still right below it.",
+          heroStats: [
+            { value: "1200", label: "planned chapters" },
+            { value: "multi-route", label: "story paths" },
+            { value: "offline", label: "core experience" },
+            { value: "4", label: "supported languages" }
+          ],
+          showcase: {
+            eyebrow: "Features",
+            title: "It reads like a novel, but plays like a long strategic board.",
+            summary: "Tap through the features to see how Tianjilu ties chapter flow, relationships, choice, and atmosphere into one experience.",
+            previewKicker: "Feature preview",
+            features: [
+              {
+                name: "Fate Map",
+                mini: "Visible routes",
+                title: "Story routes are not hidden in a black box.",
+                body: "Major choices leave a visible trail. You are not blindly tapping through a hidden structure. You are watching the board open as the route starts to bend.",
+                bullets: [
+                  "Visual route nodes show major branch points",
+                  "Helps you understand the type of consequence ahead",
+                  "Keeps the xianxia sense of layout instead of feeling like a cold flowchart"
+                ],
+                quote: "See the board first. Then decide where to place the next move.",
+                previewBadge: "Fate Map",
+                previewTitle: "Three routes are closing in at once.",
+                previewSummary: "There is more than one road forward. Different choices push the story toward different costs, loyalties, and endings.",
+                previewPills: ["Volume I", "Chapter 128", "3 branches"],
+                previewRoute: ["Enter", "Probe", "Backlash", "Rewrite"]
+              },
+              {
+                name: "Heart Ledger",
+                mini: "Relationships persist",
+                title: "Characters remember what you chose.",
+                body: "Relationships in Tianjilu evolve over time instead of appearing as one-off popups. Your bias, restraint, and hesitation can all return later in the story.",
+                bullets: [
+                  "Key character ties shift over time",
+                  "Relationship changes affect later dialogue and risk",
+                  "Lets human feeling matter as much as strategy"
+                ],
+                quote: "Outside the board, human feeling can still turn the knife.",
+                previewBadge: "Heart Ledger",
+                previewTitle: "A single act of favor can rewrite the later volume.",
+                previewSummary: "Combat is not the only thing that matters. Where you stand is remembered.",
+                previewPills: ["Su +2", "Shen -1", "tension rising"],
+                previewRoute: ["Favor", "Record", "Crack", "Echo"]
+              },
+              {
+                name: "Karma Scroll",
+                mini: "Consequences linger",
+                title: "Choices do not always pay out immediately.",
+                body: "Some consequences stay quiet for a long time. They sit in the background like karma and return only when the story has enough pressure to make them hurt.",
+                bullets: [
+                  "Short-term gain and long-term cost can coexist",
+                  "Preserves suspense instead of instant scoring",
+                  "Makes each decision feel like planting a cause"
+                ],
+                quote: "You may think the page has turned. Karma may disagree.",
+                previewBadge: "Karma Scroll",
+                previewTitle: "What helps you now may split open later.",
+                previewSummary: "Important choices stay in memory so the causes you planted can surface again chapters later.",
+                previewPills: ["short gain", "later backlash", "hidden return"],
+                previewRoute: ["Intent", "Gain", "Seed", "Settlement"]
+              },
+              {
+                name: "Quiet Reading",
+                mini: "Atmosphere first",
+                title: "The interface steps back so the pressure can come from the story.",
+                body: "The reading surface stays restrained. That leaves more room for pacing, silence, and decision weight, instead of competing for attention with noisy UI.",
+                bullets: [
+                  "Built around long-form reading",
+                  "Fewer interruptions during key scenes",
+                  "The xianxia mood comes from spacing, light, and writing rhythm"
+                ],
+                quote: "Not loud. Just quietly closing in.",
+                previewBadge: "Quiet Reading",
+                previewTitle: "When the interface moves back, the story moves forward.",
+                previewSummary: "More breathing room, less friction, and a stronger sense of being pulled into the world.",
+                previewPills: ["long chapters", "immersive", "low noise"],
+                previewRoute: ["Open", "Sink", "Choose", "Echo"]
+              }
+            ]
+          },
+          journey: {
+            eyebrow: "Experience Flow",
+            title: "Pulled in, tested, then answered by consequence.",
+            summary: "The homepage avoids direct plot spoilers. It shows the rhythm of the app instead: how the reading experience tightens over time.",
+            steps: [
+              {
+                kicker: "Step one",
+                title: "Get pulled into the world first",
+                body: "Volume names, chapters, and pressure do the work before the app starts explaining systems.",
+                accent: "jade"
+              },
+              {
+                kicker: "Step two",
+                title: "Let choices leave marks",
+                body: "Route changes, relationships, and risk all begin to move once your decisions start stacking.",
+                accent: "gold"
+              },
+              {
+                kicker: "Step three",
+                title: "Watch consequences come back later",
+                body: "Not every result appears immediately. Some of the most important ones return much later.",
+                accent: "sapphire"
+              }
+            ]
+          },
+          portal: {
+            eyebrow: "Information Pages",
+            title: "When you need specifics, keep going from here.",
+            summary: "Support, privacy, contact, content notice, and terms still live below. The homepage introduces the product. The inner pages explain the details."
+          }
         },
         privacy: {
           title: "Privacy",
@@ -768,18 +992,130 @@
       },
       pages: {
         home: {
-          title: "ヘルプと案内",
-          description: "天機録のプライバシー、サポート、連絡先、内容案内、利用規約を確認できます。",
-          heroKicker: "ヘルプと案内",
-          heroTitle: "天機録のヘルプと案内",
-          heroSummary: "プライバシー、サポート、開発者への連絡先、内容案内、利用規約を確認できます。",
-          heroTags: ["プライバシー", "サポート", "規約"],
+          title: "天機録",
+          description: "選択に応える仙侠インタラクティブ小説。機能を見てから、プライバシー、サポート、連絡先、内容案内、利用規約へ進めます。",
+          heroKicker: "インタラクティブ仙侠",
+          heroTitle: "修行と選択と因果を、応答する小説にしました。",
+          heroSummary: "天機録は、読むだけで終わる仙侠小説ではありません。選択によってルート、関係、後の代償が動きます。中心は長編読書体験ですが、世界は常にあなたの行動を覚えています。",
+          heroTags: ["分岐物語", "関係の蓄積", "オフライン中心", "4言語対応"],
           heroActions: [
-            { href: "./support.html", label: "サポートを見る", variant: "primary" },
-            { href: "./privacy.html", label: "プライバシーを見る", variant: "secondary" }
+            { scrollTarget: "showcase", label: "機能を見る", variant: "primary" },
+            { scrollTarget: "information", label: "案内ページへ", variant: "secondary" }
           ],
-          noteTitle: "どこから見ればよいか",
-          noteBody: "利用中の問題はサポート、端末に保存される内容はプライバシー、作品の雰囲気を先に確かめたい場合は内容案内から確認できます。"
+          noteTitle: "なぜこのページは製品紹介なのか",
+          noteBody: "最初にアプリの雰囲気と体験を伝え、その後ろにサポート、プライバシー、連絡先、内容案内、規約を残す構成にしています。",
+          heroStats: [
+            { value: "1200", label: "章構成" },
+            { value: "多分岐", label: "物語ルート" },
+            { value: "オフライン", label: "中心体験" },
+            { value: "4", label: "対応言語" }
+          ],
+          showcase: {
+            eyebrow: "機能",
+            title: "小説のように読み、盤上のように選ぶ。",
+            summary: "下の機能を切り替えると、天機録が章、関係、選択、空気感をどう一つにまとめているか見えてきます。",
+            previewKicker: "プレビュー",
+            features: [
+              {
+                name: "命途図",
+                mini: "分岐が見える",
+                title: "分岐は裏側に隠れません。",
+                body: "重要な選択は痕跡を残します。見えない箱の中で選ばされるのではなく、開いていく命途図の上で局の傾きを見ながら進みます。",
+                bullets: [
+                  "大きな分岐点を可視化",
+                  "先にどんな結果が待つかを読みやすくする",
+                  "冷たいフローチャートではなく仙侠の布局感を保つ"
+                ],
+                quote: "先に局を見る。次の一手はそのあとで決める。",
+                previewBadge: "命途図",
+                previewTitle: "三つの道が、同時に迫ってきます。",
+                previewSummary: "進む道は一つではありません。選択次第で、代償も人心も結末の向きも変わります。",
+                previewPills: ["第一巻", "第128章", "3分岐"],
+                previewRoute: ["入局", "試し", "反噬", "改命"]
+              },
+              {
+                name: "人心盤",
+                mini: "関係が積み重なる",
+                title: "人物は、あなたの選択を覚えています。",
+                body: "関係変化を一度きりの表示で終わらせません。偏り、ためらい、庇い方まで、後の巻でじわじわ効いてきます。",
+                bullets: [
+                  "主要人物との関係が継続変化する",
+                  "後の会話や立場に影響する",
+                  "戦略だけでなく人心も局の一部にする"
+                ],
+                quote: "盤面の外でも、人心は刃になります。",
+                previewBadge: "人心盤",
+                previewTitle: "一度の肩入れが、後半を変えることがあります。",
+                previewSummary: "重要なのは戦いだけではありません。どちらに立つかは、ちゃんと記録されます。",
+                previewPills: ["蘇 +2", "沈 -1", "緊張上昇"],
+                previewRoute: ["肩入れ", "記録", "亀裂", "反響"]
+              },
+              {
+                name: "因果巻",
+                mini: "結果が遅れて返る",
+                title: "選択は、すぐに精算されるとは限りません。",
+                body: "結果の中には長く沈んだまま残るものがあります。因果のように後ろに積もり、圧が十分になったところで戻ってきます。",
+                bullets: [
+                  "短期利益と長期代償を同時に置ける",
+                  "即時採点ではなく先を引っ張る",
+                  "選択を“種因”として感じさせる"
+                ],
+                quote: "ページは進んでも、因果は終わっていません。",
+                previewBadge: "因果巻",
+                previewTitle: "今の得が、後の裂け目になることもあります。",
+                previewSummary: "重要な選択は残り続け、もっと後の章で因として戻ってきます。",
+                previewPills: ["今は得", "後で反噬", "隠れ回収"],
+                previewRoute: ["起念", "得", "伏線", "清算"]
+              },
+              {
+                name: "静読モード",
+                mini: "空気と余白",
+                title: "UIが一歩下がると、物語の圧が一歩前に出ます。",
+                body: "画面はできるだけ騒がしくせず、文字と選択の重さが前に出るようにしています。派手さよりも、静かな張り詰め方を選んでいます。",
+                bullets: [
+                  "長編読書に寄せた設計",
+                  "重要場面でのノイズを減らす",
+                  "仙侠の空気を光、余白、文章のリズムで作る"
+                ],
+                quote: "派手に光るのではなく、静かに迫る。",
+                previewBadge: "静読モード",
+                previewTitle: "画面が引けば、物語はもっと前に出ます。",
+                previewSummary: "邪魔を減らし、呼吸を長く取り、世界へ沈みやすくします。",
+                previewPills: ["長編", "没入", "低ノイズ"],
+                previewRoute: ["開く", "沈む", "選ぶ", "余韻"]
+              }
+            ]
+          },
+          journey: {
+            eyebrow: "体験の流れ",
+            title: "入局し、試され、あとから返ってくる。",
+            summary: "このページでは具体的なネタバレは避け、アプリがどうやって緊張感を積み上げるかだけを見せています。",
+            steps: [
+              {
+                kicker: "第一段",
+                title: "まず世界観に引き込む",
+                body: "巻名、章名、局勢で空気を作り、先にシステム説明を押しつけません。",
+                accent: "jade"
+              },
+              {
+                kicker: "第二段",
+                title: "次に選択を痕跡にする",
+                body: "選択がルートや関係や危うさを動かし始め、インタラクションが飾りで終わりません。",
+                accent: "gold"
+              },
+              {
+                kicker: "第三段",
+                title: "最後に因果を戻す",
+                body: "すぐ出ない結果もあります。大事なものほど、後になって戻ってきます。",
+                accent: "sapphire"
+              }
+            ]
+          },
+          portal: {
+            eyebrow: "案内ページ",
+            title: "詳しいことが必要なら、この先へ進めます。",
+            summary: "サポート、プライバシー、連絡先、内容案内、規約はそのまま残っています。トップは製品を見せ、内側のページで詳細を説明します。"
+          }
         },
         privacy: {
           title: "プライバシー",
@@ -1138,18 +1474,130 @@
       },
       pages: {
         home: {
-          title: "도움말 및 안내",
-          description: "천기록의 개인정보, 지원, 연락처, 콘텐츠 안내, 이용약관을 확인할 수 있습니다.",
-          heroKicker: "도움말 및 안내",
-          heroTitle: "천기록 도움말 및 안내",
-          heroSummary: "개인정보, 지원, 개발자 연락처, 콘텐츠 안내, 이용약관을 현재 버전 기준으로 확인할 수 있습니다.",
-          heroTags: ["개인정보", "지원", "약관"],
+          title: "천기록",
+          description: "선택에 응답하는 선협 인터랙티브 소설. 먼저 제품을 보고, 그다음 개인정보, 지원, 연락처, 콘텐츠 안내, 이용약관으로 이어집니다.",
+          heroKicker: "인터랙티브 선협",
+          heroTitle: "수행과 선택과 인과를, 되돌아오는 소설로 만들었습니다.",
+          heroSummary: "천기록은 정적인 선협 소설이 아닙니다. 당신의 선택이 경로와 관계, 이후의 대가를 바꿉니다. 중심은 긴 호흡의 읽기 경험이지만, 세계는 계속 당신의 행동을 기억합니다.",
+          heroTags: ["분기 서사", "관계 기억", "오프라인 중심", "4개 언어"],
           heroActions: [
-            { href: "./support.html", label: "지원 보기", variant: "primary" },
-            { href: "./privacy.html", label: "개인정보 보기", variant: "secondary" }
+            { scrollTarget: "showcase", label: "기능 보기", variant: "primary" },
+            { scrollTarget: "information", label: "안내 페이지 열기", variant: "secondary" }
           ],
-          noteTitle: "어디서 시작하면 좋은지",
-          noteBody: "사용 중 문제가 있으면 지원, 기기에 저장되는 내용이 궁금하면 개인정보, 작품 분위기를 먼저 확인하고 싶으면 콘텐츠 안내부터 보면 됩니다."
+          noteTitle: "왜 첫 화면이 제품 소개처럼 보이는지",
+          noteBody: "첫 페이지에서는 앱의 분위기와 쓰임을 먼저 보여 주고, 지원, 개인정보, 연락처, 콘텐츠 안내, 약관은 그 아래에서 이어서 볼 수 있게 했습니다.",
+          heroStats: [
+            { value: "1200", label: "챕터 구상" },
+            { value: "다중 루트", label: "분기 흐름" },
+            { value: "오프라인", label: "핵심 경험" },
+            { value: "4", label: "지원 언어" }
+          ],
+          showcase: {
+            eyebrow: "기능",
+            title: "소설처럼 읽고, 판 위에 수를 두듯 선택합니다.",
+            summary: "아래 기능을 바꿔 보면서 천기록이 챕터 흐름, 관계, 선택, 분위기를 어떻게 한 경험으로 묶는지 확인할 수 있습니다.",
+            previewKicker: "미리 보기",
+            features: [
+              {
+                name: "명도도",
+                mini: "경로가 보임",
+                title: "갈림길이 보이지 않는 곳에 숨지 않습니다.",
+                body: "중요한 선택은 흔적을 남깁니다. 보이지 않는 상자 속에서 고르는 대신, 펼쳐지는 명도도 위에서 판의 기울기를 보며 나아갑니다.",
+                bullets: [
+                  "주요 분기 지점을 시각적으로 보여 줌",
+                  "어떤 종류의 결과가 올지 미리 감을 잡게 함",
+                  "차가운 플로우차트 대신 선협의 포석감을 유지"
+                ],
+                quote: "먼저 판을 보고, 그다음 수를 둡니다.",
+                previewBadge: "명도도",
+                previewTitle: "세 갈래 길이 동시에 다가옵니다.",
+                previewSummary: "앞으로 가는 길은 하나가 아닙니다. 선택에 따라 대가도, 인간관계도, 결말의 방향도 달라집니다.",
+                previewPills: ["1권", "128화", "3갈래"],
+                previewRoute: ["입국", "탐색", "반작용", "개명"]
+              },
+              {
+                name: "인심판",
+                mini: "관계가 누적됨",
+                title: "인물들은 당신이 한 선택을 기억합니다.",
+                body: "관계 변화는 한 번 뜨고 끝나는 알림이 아닙니다. 편들기, 망설임, 외면까지 뒤의 권에서 천천히 돌아옵니다.",
+                bullets: [
+                  "주요 인물 관계가 계속 변함",
+                  "이후 대화와 위험도에 영향을 줌",
+                  "전략만이 아니라 사람의 마음도 판의 일부가 되게 함"
+                ],
+                quote: "판 밖에서도, 사람 마음은 칼이 됩니다.",
+                previewBadge: "인심판",
+                previewTitle: "한 번의 편들기가 뒤 권을 바꿀 수 있습니다.",
+                previewSummary: "중요한 것은 싸움만이 아닙니다. 어느 편에 섰는지도 기억됩니다.",
+                previewPills: ["소 +2", "심 -1", "긴장 상승"],
+                previewRoute: ["편들기", "기록", "균열", "메아리"]
+              },
+              {
+                name: "인과권",
+                mini: "결과가 늦게 돌아옴",
+                title: "선택은 언제나 바로 정산되지 않습니다.",
+                body: "어떤 결과는 오래 가라앉아 있다가, 압력이 충분히 쌓였을 때 뒤늦게 돌아옵니다. 그래서 선택은 즉시 점수보다 더 오래 남습니다.",
+                bullets: [
+                  "단기 이익과 장기 대가를 함께 둠",
+                  "즉시 점수화보다 긴 여운을 만듦",
+                  "선택을 진짜 ‘씨앗’처럼 느끼게 함"
+                ],
+                quote: "페이지는 넘어가도, 인과는 끝나지 않습니다.",
+                previewBadge: "인과권",
+                previewTitle: "지금의 이득이 나중의 균열이 될 수 있습니다.",
+                previewSummary: "중요한 선택은 저장되었다가 더 뒤의 장면에서 다시 떠오릅니다.",
+                previewPills: ["당장 이득", "나중 반작용", "숨은 회수"],
+                previewRoute: ["기점", "이득", "복선", "정산"]
+              },
+              {
+                name: "정독 모드",
+                mini: "분위기와 호흡",
+                title: "화면이 한 걸음 물러나면, 이야기의 압은 더 앞으로 옵니다.",
+                body: "UI는 가능한 한 조용하게 두고, 문장과 선택의 무게가 앞에 오도록 했습니다. 화려함보다 조용한 긴장을 택했습니다.",
+                bullets: [
+                  "장편 읽기에 맞춘 설계",
+                  "중요한 장면에서 불필요한 방해를 줄임",
+                  "선협의 분위기를 빛, 여백, 문장 리듬으로 만듦"
+                ],
+                quote: "요란하게 번쩍이지 않고, 조용히 조여 옵니다.",
+                previewBadge: "정독 모드",
+                previewTitle: "화면이 물러나면 이야기는 더 앞으로 나옵니다.",
+                previewSummary: "방해는 줄이고, 호흡은 길게 가져가며, 세계 안으로 더 쉽게 들어가게 합니다.",
+                previewPills: ["장편", "몰입", "낮은 잡음"],
+                previewRoute: ["열기", "잠기기", "선택", "잔향"]
+              }
+            ]
+          },
+          journey: {
+            eyebrow: "경험 흐름",
+            title: "먼저 끌어들이고, 시험하고, 나중에 되돌려 줍니다.",
+            summary: "이 첫 화면은 줄거리 스포일러를 피하면서, 앱이 어떻게 긴장과 여운을 쌓는지만 보여 줍니다.",
+            steps: [
+              {
+                kicker: "첫 단계",
+                title: "먼저 세계에 끌어들입니다",
+                body: "권 제목과 챕터, 분위기로 먼저 세계를 열고, 시스템 설명을 앞세우지 않습니다.",
+                accent: "jade"
+              },
+              {
+                kicker: "둘째 단계",
+                title: "그다음 선택이 흔적이 되게 합니다",
+                body: "선택이 경로와 관계와 위험도를 움직이기 시작하면서, 상호작용이 장식으로 끝나지 않습니다.",
+                accent: "gold"
+              },
+              {
+                kicker: "셋째 단계",
+                title: "마지막에 결과를 다시 돌려줍니다",
+                body: "모든 결과가 즉시 보이지는 않습니다. 중요한 것일수록 더 뒤에서 돌아옵니다.",
+                accent: "sapphire"
+              }
+            ]
+          },
+          portal: {
+            eyebrow: "안내 페이지",
+            title: "더 구체적인 정보가 필요하면 여기서 이어집니다.",
+            summary: "지원, 개인정보, 연락처, 콘텐츠 안내, 약관은 그대로 남아 있습니다. 홈은 제품을 소개하고, 안쪽 페이지는 세부 내용을 설명합니다."
+          }
         },
         privacy: {
           title: "개인정보",
