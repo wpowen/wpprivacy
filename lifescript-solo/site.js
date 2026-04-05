@@ -44,6 +44,17 @@
     return isExternalHref(href) ? href : withLanguage(href, language);
   }
 
+  function renderPillStrip(items) {
+    const filtered = (items || []).filter(Boolean);
+    if (!filtered.length) return "";
+
+    return `
+      <div class="hero-strip">
+        ${filtered.map((item) => `<span>${item}</span>`).join("")}
+      </div>
+    `;
+  }
+
   function renderAction(action, language) {
     return `
       <a class="cta-link ${action.variant === "primary" ? "primary" : "secondary"}" href="${localizedHref(action.href, language)}">
@@ -62,20 +73,34 @@
   }
 
   function renderCards(cards, language) {
-    return cards.map((card) => `
-      <article class="highlight-${card.accent}">
-        <p class="section-kicker">${card.kicker}</p>
+    return cards.map((card) => {
+      const content = `
+        ${card.kicker ? `<p class="section-kicker">${card.kicker}</p>` : ""}
         <h2>${card.title}</h2>
         <p>${card.body}</p>
-        ${card.href ? `<div class="meta-row"><a class="inline-link" href="${withLanguage(card.href, language)}">${card.title}</a></div>` : ""}
-      </article>
-    `).join("");
+        ${card.href ? `<span class="card-link">${card.linkLabel || "Open"}</span>` : ""}
+      `;
+
+      if (card.href) {
+        return `
+          <a class="grid-card highlight-${card.accent || "jade"}" href="${localizedHref(card.href, language)}">
+            ${content}
+          </a>
+        `;
+      }
+
+      return `
+        <article class="grid-card highlight-${card.accent || "jade"}">
+          ${content}
+        </article>
+      `;
+    }).join("");
   }
 
   function renderSections(sections, language) {
     return sections.map((section) => `
       <article class="section-card highlight-${section.accent}">
-        <p class="section-kicker">${section.kicker}</p>
+        ${section.kicker ? `<p class="section-kicker">${section.kicker}</p>` : ""}
         <h2>${section.title}</h2>
         <p>${section.body}</p>
         ${section.bullets && section.bullets.length ? `<ul>${section.bullets.map((bullet) => `<li>${bullet}</li>`).join("")}</ul>` : ""}
@@ -160,22 +185,22 @@
                 <h1 class="hero-title">${currentPage.heroTitle}</h1>
               </div>
               <p class="hero-summary">${currentPage.heroSummary}</p>
-              <div class="hero-strip">
-                ${currentPage.heroTags.map((tag) => `<span>${tag}</span>`).join("")}
-              </div>
-              <div class="hero-actions">
-                ${(currentPage.heroActions || []).map((action) => renderAction(action, language)).join("")}
-              </div>
+              ${renderPillStrip(currentPage.heroTags)}
+              ${(currentPage.heroActions || []).length ? `
+                <div class="hero-actions">
+                  ${(currentPage.heroActions || []).map((action) => renderAction(action, language)).join("")}
+                </div>
+              ` : ""}
             </div>
 
             <aside class="hero-note">
               <p class="note-title">${currentPage.noteTitle}</p>
               <p class="note-copy">${currentPage.noteBody}</p>
-              <div class="hero-strip">
-                <span>${translation.common.appReviewReady}</span>
-                <span>${translation.common.userFacing}</span>
-                <span>${translation.common.multiLanguage}</span>
-              </div>
+              ${renderPillStrip([
+                translation.common.appReviewReady,
+                translation.common.userFacing,
+                translation.common.multiLanguage
+              ])}
               <p class="note-copy">${translation.common.lastUpdated}</p>
             </aside>
           </div>
